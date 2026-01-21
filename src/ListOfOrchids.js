@@ -33,7 +33,7 @@ export const Orchids = [
   },
   {
     id: 4,
-    image: "https://www.rawpixel.com/search/vanda%20orchid",
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Vanda_Rothschildiana_Pacific_Orchid_Exposition_2010.jpg",
     name: "Vanda",
     origin: "Thailand",
     color: "Blue",
