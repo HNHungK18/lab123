@@ -12,7 +12,7 @@ export default function OrchidModal({ show, onClose, orchid }) {
       className="modal-show"
       style={{ display: 'block', position: 'initial' }}
     >
-      <Modal show={show} onHide={onclose}>
+      <Modal show={show} onHide={onClose} className='orchid-modal'>
         <Modal.Header>
           <Modal.Title>{orchid.id} {orchid.name}</Modal.Title>
         </Modal.Header>

@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body.light {
+  background: linear-gradient(135deg, #f6fffb, #ecfffa);
+  color: #1f2933;
+}
+
+body.light .card {
+  background-color: #ffffff;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #0f2027, #203a43);
+  color: #e5f9f2;
+}
+
+body.dark .card {
+  background-color: #1f2f2b;
+  color: #e5f9f2;
+}
+
+body.dark .modal-content {
+  background-color: #1f2f2b;
+  color: #e5f9f2;
+}
+
+.app-header {
+  background-color: #52b189;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #52b189;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #32e299;
+}

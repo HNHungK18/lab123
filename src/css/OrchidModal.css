@@ -4,3 +4,31 @@
   object-fit: cover;  
   border-radius: 8px;
 }
+
+.orchid-modal .modal-header {
+  background-color: #52b189;
+  color: white;
+  border-bottom: none;
+}
+
+.orchid-modal .modal-title {
+  font-weight: bold;
+}
+
+.orchid-modal .modal-body {
+  background-color: #f6fffb;
+}
+
+.orchid-modal .modal-footer {
+  background-color: #f6fffb;
+  border-top: none;
+}
+
+.orchid-modal .btn-secondary {
+  background-color: #52b189;
+  border: none;
+}
+
+.orchid-modal .btn-secondary:hover {
+  background-color: #3f9f7a;
+}

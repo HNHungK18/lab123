@@ -8,8 +8,17 @@
   border-radius: 16px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease;
+  background-color: #52b189;
 }
 
 .card:hover {
   transform: translateY(-5px);
+}
+.card .btn-primary {
+  background-color: #32e299;
+  border: none;
+  
+}
+.card .btn-primary:hover {
+  background-color: #28c18a;
 }
