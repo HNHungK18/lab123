@@ -1,16 +1,26 @@
 
 import './App.css';
-import OrchidContainer from './components/OrchidContainer';
+import { useState } from 'react';
+import OrchidNavbar from './components/OrchidNavbar';
 import ThemeToggle from './components/ThemeToggle';
+import Dashboard from './components/Dashboard';
+import { AuthProvider } from './context/AuthProvider';
+import ProtectedOrchid from './components/ProtectedOrchid';
 function App() {
+const [page, setPage] = useState("dashboard");
+
   return (
-    <div className="App">
+    <AuthProvider>
+      <div className="App">
       <header className="App-header">
         <h1>List of Orchids</h1>
         <ThemeToggle />
+        <OrchidNavbar currentPage={page}  setCurrentPage={setPage} />
       </header>
-      <OrchidContainer/>
+       {page === "orchidList" && <ProtectedOrchid/>}
+       {page === "dashboard" && <Dashboard />}
     </div>
+    </AuthProvider>
   );
 }
 

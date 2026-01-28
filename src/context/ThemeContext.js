@@ -1,12 +1,19 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import { useLayoutEffect } from 'react';
 
 export const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState(() => {
+    return localStorage.getItem("theme") || 'light';
+  });
+
+  useLayoutEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
 
   useEffect(() => {
-    document.body.className = theme;
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   const toggleTheme = () => {
