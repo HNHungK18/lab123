@@ -12,6 +12,7 @@ export default function OrchidNavbar({ setCurrentPage }) {
           <Nav className="me-auto">
             <Nav.Link onClick={() => setCurrentPage("dashboard")}>Dashboard</Nav.Link>
             <Nav.Link disabled={!user} onClick={() => setCurrentPage("orchidList")}>Orchid List</Nav.Link>
+            <Nav.Link disabled={!user} onClick={() => setCurrentPage("contact")}>Contact</Nav.Link>
           </Nav>
     </Container>
     </Navbar>

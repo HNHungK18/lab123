@@ -6,6 +6,7 @@ import ThemeToggle from './components/ThemeToggle';
 import Dashboard from './components/Dashboard';
 import { AuthProvider } from './context/AuthProvider';
 import ProtectedOrchid from './components/ProtectedOrchid';
+import ContactContainer from './components/ContactContainer';
 function App() {
 const [page, setPage] = useState("dashboard");
 
@@ -19,6 +20,7 @@ const [page, setPage] = useState("dashboard");
       </header>
        {page === "orchidList" && <ProtectedOrchid/>}
        {page === "dashboard" && <Dashboard />}
+       {page === "contact" && <ContactContainer />}
     </div>
     </AuthProvider>
   );
